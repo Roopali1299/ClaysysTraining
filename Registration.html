@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Task Management App</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0;">
+
+     <!-- Header  -->
+    <header style="background-color: #333; color: white; padding: 1em 0;">
+        <nav>
+            <table align="center" width="100%">
+                <tr>
+                    <td align="center" style="padding: 10px;"><a href="Home.html" style="color: white; text-decoration: none;">Home</a></td>
+                    <td align="center" style="padding: 10px;"><a href="Login.html" style="color: white; text-decoration: none;">Login</a></td>
+                    <td align="center" style="padding: 10px;"><a href="Registration.html" style="color: white; text-decoration: none;">Register</a></td>
+                    <td align="center" style="padding: 10px;"><a href="AboutUs.html" style="color: white; text-decoration: none;">About Us</a></td>
+                    <td align="center" style="padding: 10px;"><a href="ContactUs.html" style="color: white; text-decoration: none;">Contact Us</a></td>
+
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <main style="background-color: #f4f4f4; padding: 20px;">
+        <section style="max-width: 600px; margin: 50px auto; padding: 20px; background-color: white; border: 1px solid #ddd;">
+            <h2 style="text-align: center;">Register</h2>
+            <form action="/register" method="post">
+                <label for="firstname">First Name:</label><br>
+                <input type="text" id="firstname" name="firstname" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="lastname">Last Name:</label><br>
+                <input type="text" id="lastname" name="lastname" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="dob">Date of Birth (dd/mm/yyyy):</label><br>
+                <input type="text" id="dob" name="dob" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="dd/mm/yyyy" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" min="18" max="120" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="state">State:</label><br>
+                <select id="state" name="state" style="width: 100%; padding: 8px; margin: 10px 0;" required>
+                    <option value="">Select State</option>
+                    <option value="state1">Kerala</option>
+                    <option value="state2">Goa</option>
+                </select><br>
+
+                <label for="city">City:</label><br>
+                <select id="city" name="city" style="width: 100%; padding: 8px; margin: 10px 0;" required>
+                    <option value="">Select City</option>
+                </select><br>
+
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <label for="confirmPassword">Confirm Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+
+                <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 1em 0;">
+        <p>Contact: contact@taskmanagementapp.com</p>
+        <p>&copy; 2024 Task Management App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
